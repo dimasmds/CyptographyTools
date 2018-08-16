@@ -1,0 +1,84 @@
+﻿<Page x:Class="CryptograhpyTools.LearnCryptoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CryptograhpyTools"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1366"
+      Title="LearnCryptoPage">
+
+    <Grid Margin="40,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer Grid.Column="0"
+                      MaxHeight="375"
+                      Margin="0,0,40,0">
+        <StackPanel Margin="0,0,20,0"
+                    Orientation="Vertical"
+                    VerticalAlignment="Center">
+            <Button Margin="0,0,0,20"
+                    FontFamily="Segoe UI"
+                    FontSize="18px"
+                    Width="212px"
+                    Height="114px"
+                    FontWeight="Light"
+                    Background="#2ecc71"
+                    Foreground="White"
+                    Name="Lesson1"
+                    Click="Lesson1_Click"
+                   >Ebook 1</Button>
+
+            <Button Margin="0,0,0,20"
+                    FontFamily="Segoe UI"
+                    FontSize="18px"
+                    Width="212px"
+                    Height="114px"
+                    FontWeight="Light"
+                    Background="#2ecc71"
+                    Foreground="White"
+                    Name="Lesson2"
+                    Click="Lesson2_Click"
+                   >Ebook 2</Button>
+
+            <Button Margin="0,0,0,20"
+                    FontFamily="Segoe UI"
+                    FontSize="18px"
+                    Width="212px"
+                    Height="114px"
+                    FontWeight="Light"
+                    Background="#2ecc71"
+                    Foreground="White"
+                    Name="Lesson3"
+                    Click="Lesson3_Click"
+                   >Ebook 3</Button>
+            <Button Margin="0,0,0,20"
+                    FontFamily="Segoe UI"
+                    FontSize="18px"
+                    Width="212px"
+                    Height="114px"
+                    FontWeight="Light"
+                    Background="#2ecc71"
+                    Foreground="White"
+                   >Ebook 4</Button>
+            <Button Margin="0,0,0,20"
+                    FontFamily="Segoe UI"
+                    FontSize="18px"
+                    Width="212px"
+                    Height="114px"
+                    FontWeight="Light"
+                    Background="#2ecc71"
+                    Foreground="White"
+                   >Ebook 5</Button>
+        </StackPanel>
+        </ScrollViewer>
+        
+        <WindowsFormsHost Grid.Column="1" 
+                          Height="472" 
+                          Width="941"
+                          Name="WFHPdf"/>
+    </Grid>
+</Page>

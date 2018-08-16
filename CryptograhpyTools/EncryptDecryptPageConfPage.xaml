@@ -1,0 +1,147 @@
+﻿<Page x:Class="CryptograhpyTools.EncryptDecryptPageConfPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CryptograhpyTools"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1366"
+      Title="EncryptDecryptPageConfPage">
+
+      <StackPanel
+                    Margin="30,50,0,0">
+            <TextBlock FontFamily="Segoe UI"
+                       FontWeight="Regular"
+                       FontSize="26px"
+                       Text="General Setting" 
+                       Foreground="#FFF"
+                       Margin="0,0,0,30"/>
+            <Grid Margin="30,0,0,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Grid.Row="0"
+                           FontFamily="Segoe UI"
+                           FontWeight="Light"
+                           FontSize="26px"
+                           Text="Cipher Mode:"
+                           Foreground="#fff"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Margin="0,0,0,20"
+                           />
+                <ComboBox Name="ComboBoxCipherMode"
+                          Width="262" Height="34"
+                          Grid.Column="1" Grid.Row="0"
+                          FontFamily="Segoe UI"
+                          FontSize="18px"
+                          FontWeight="Light"
+                          Margin="30,0,0,20"
+                          />
+
+                <TextBlock Grid.Column="0" Grid.Row="1"
+                           FontFamily="Segoe UI"
+                           FontWeight="Light"
+                           FontSize="26px"
+                           Text="Padding Mode:"
+                           Foreground="#fff"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           
+                           />
+                <ComboBox Name="ComboBoxPaddingMode"
+                          Width="262" Height="34"
+                          Grid.Column="1" Grid.Row="1"
+                          Margin="30,0,0,0"
+                          FontFamily="Segoe UI"
+                          FontSize="18px"
+                          FontWeight="Light"
+                          />
+            </Grid>
+
+            <TextBlock FontFamily="Segoe UI"
+                       FontWeight="Regular"
+                       FontSize="26px"
+                       Text="File Crypt Setting" 
+                       Foreground="#FFF"
+                       Margin="0,10,0,30"/>
+            <Grid Margin="30,0,0,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Grid.Row="0"
+                           FontFamily="Segoe UI"
+                           FontWeight="Light"
+                           FontSize="26px"
+                           Text="Maximal Size:"
+                           Foreground="#fff"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Margin="0,0,0,20"
+                           />
+
+                <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="0">
+                    <Slider Name="SliderMaxSize"
+                            Width="200" Height="34"
+                            Minimum="10" Maximum="100"
+                            Margin="30,0,0,0"
+                            HorizontalAlignment="Left"
+                            Value="10"
+                            TickFrequency="1"
+                            IsSnapToTickEnabled="True"
+                            ValueChanged="SliderMaxSize_ValueChanged"
+                            />
+                    <TextBlock Margin="15,0,0,0"
+                               Name="TextBlockSize"
+                               FontFamily="Segoe UI"
+                               FontSize="24px"
+                               FontWeight="Light"
+                               Foreground="#fff"
+                               Text=""/>
+                </StackPanel>
+
+
+                <TextBlock Grid.Column="0" Grid.Row="1"
+                           FontFamily="Segoe UI"
+                           FontWeight="Light"
+                           FontSize="26px"
+                           Text="File Format:"
+                           Foreground="#fff"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           
+                           />
+                <ComboBox Name="ComboBoxFormatFiles"
+                          Width="262" Height="34"
+                          Grid.Column="1" Grid.Row="1"
+                          Margin="30,0,0,0"
+                          FontFamily="Segoe UI"
+                          FontSize="18px"
+                          FontWeight="Light"
+                          HorizontalAlignment="Left"
+                          />
+            </Grid>
+
+            <Button Name="ButtonSave"
+                Width="200px"
+                Height="50px"
+                Background="#27ae60"
+                Foreground="#fff"
+                FontFamily="Segoe UI"
+                FontSize="18px"
+                HorizontalAlignment="Left"
+                FontWeight="Bold"
+                Margin="30,50,0,0"
+                Click="ButtonSave_Click">Save Configuration</Button>
+        </StackPanel>
+</Page>

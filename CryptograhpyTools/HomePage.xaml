@@ -1,0 +1,87 @@
+﻿<Page x:Class="CryptograhpyTools.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CryptograhpyTools"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1366"
+      Title="HomePage">
+
+    <StackPanel
+                Orientation="Horizontal"
+                HorizontalAlignment="Center">
+        <Button Background="#2c3e50"
+                Name="ButtonTools"
+                Height="212"
+                Width="248"
+                Margin="0,0,40,0" BorderBrush="{x:Null}"
+                Click="ButtonTools_Click"
+                >
+            <StackPanel>
+                <TextBlock FontFamily="Segoe MDL2 Assets"
+                           Text="&#xE8D7;"
+                           FontSize="48px"
+                           Foreground="#fff"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,30"
+                           />
+                <TextBlock FontFamily="Segoe UI"
+                           HorizontalAlignment="Center"
+                           FontWeight="Light"
+                           FontSize="18px"
+                           Text="Encrypt and Decrypt Tools"
+                           Foreground="#fff"
+                           />
+            </StackPanel>
+        </Button>
+
+        <Button Background="#16a085"
+                Name="ButtonLearns"
+                Height="212"
+                Width="248"
+                Margin="0,0,40,0" BorderBrush="{x:Null}"
+                Click="ButtonLearns_Click">
+            <StackPanel>
+                <TextBlock FontFamily="Segoe MDL2 Assets"
+                           Text="&#xE8F1;"
+                           FontSize="48px"
+                           Foreground="#fff"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,30"
+                           />
+                <TextBlock FontFamily="Segoe UI"
+                           HorizontalAlignment="Center"
+                           FontWeight="Light"
+                           FontSize="18px"
+                           Text="Ebooks Cryptography"
+                           Foreground="#fff"
+                           />
+            </StackPanel>
+        </Button>
+
+        <Button Background="#c0392b"
+                Name="ButtonBugs"
+                Height="212"
+                Width="248"
+                Margin="0,0,40,0" BorderBrush="{x:Null}"
+                Click="ButtonBugs_Click">
+            <StackPanel>
+                <TextBlock FontFamily="Segoe MDL2 Assets"
+                           Text="&#xE8E0;"
+                           FontSize="48px"
+                           Foreground="#fff"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,30"
+                           />
+                <TextBlock FontFamily="Segoe UI"
+                           HorizontalAlignment="Center"
+                           FontWeight="Light"
+                           FontSize="18px"
+                           Text="Send Report Bugs"
+                           Foreground="#fff"
+                           />
+            </StackPanel>
+        </Button>
+    </StackPanel>
+</Page>
